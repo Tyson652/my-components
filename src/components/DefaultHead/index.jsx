@@ -1,10 +1,10 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import Helmet from "react-helmet";
-import SiteYamlType from "../../types/siteYaml";
+import defaultYaml from "./defaultHead.yaml"
 
-export const DefaultHead = ({ siteYaml, children }) => {
-  const { title, defaultImage, description, siteUrl, location } = siteYaml;
-  const { name, streetAddress, city, latitude, longitude } = location
+export const DefaultHead = ({ children }) => {
+  const { title, defaultImage, description, siteUrl } = defaultYaml;
+  const { name, streetAddress, city, latitude, longitude } = defaultYaml.location
 
   const seo = {
     title: title,

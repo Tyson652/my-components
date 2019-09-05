@@ -5,7 +5,7 @@ export const Avatar = ({ image, size }) => {
   // let imageSrc = "";
   // testImage(image, imageSrc)
   return (
-    <img
+    <Styled.img
       src={image}
       // onerror={`this.src=${DefaultAvatar}`}
       sx={{

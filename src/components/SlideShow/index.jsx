@@ -1,6 +1,6 @@
 /** @jsx jsx */
-import { useState, useEffect } from "react"
-import { jsx, Box, Flex, Styled } from "theme-ui"
+import { useState } from "react"
+import { jsx, Box, Flex } from "theme-ui"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export const SlideShow = ({ imageUrls, siteYaml }) => {

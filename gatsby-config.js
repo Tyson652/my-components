@@ -1,7 +1,12 @@
 module.exports = {
   plugins: [
-    `gatsby-plugin-typescript`,
-    `babel-plugin-remove-graphql-queries`,
-    `gatsby-plugin-mdx`
+    `gatsby-plugin-mdx`,
+    `gatsby-transformer-yaml`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/components/DefaultHead`,
+      },
+    },
   ]
 };
