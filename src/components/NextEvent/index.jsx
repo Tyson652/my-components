@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, Container, Flex, Styled } from "theme-ui";
 import { MDXRenderer } from "gatsby-plugin-mdx";
-import NextEventYaml from "nextEventYaml.yaml"
+import NextEventYaml from "./nextEventYaml.yaml"
 
 export const NextEvent = ({
   eventImgUrl,

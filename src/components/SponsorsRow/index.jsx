@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx, Box, Styled, Flex, Container } from "theme-ui"
-import SponsorsRowYaml from "./sponsorsRowYaml"
+import SponsorsRowYaml from "./sponsorsRowYaml.yaml"
 
 export const SponsorsGroup = ({ sponsors }) => {
   return (

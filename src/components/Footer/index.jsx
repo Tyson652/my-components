@@ -59,10 +59,10 @@ export const Footer = () => {
           }}
         >
           <Flex sx={{ flexDirection: "column", textAlign: "center" }}>
-            <Styled.p sx={{ fontSize: 4, marginBottom: 0 }}>
+            <Styled.p sx={{ fontSize: 24, marginBottom: 0 }}>
               {title}
             </Styled.p>
-            <Styled.p sx={{ fontSize: 2 }}>{copyright}</Styled.p>
+            <Styled.p sx={{ fontSize: 16 }}>{copyright}</Styled.p>
           </Flex>
         </Flex>
       </Flex>
@@ -80,17 +80,17 @@ const FooterMessage = () => {
       }}
     >
       <Styled.p
-        sx={{ fontSize: 4, marginY: 0, fontWeight: "bold", paddingX: 6 }}
+        sx={{ fontSize: 24, marginY: 0, fontWeight: "bold", paddingX: 32 }}
       >
         {message1}
       </Styled.p>
       <Styled.p
         sx={{
-          fontSize: 4,
-          marginTop: 2,
-          marginBottom: 4,
+          fontSize: 24,
+          marginTop: 4,
+          marginBottom: 16,
           fontWeight: "bold",
-          paddingX: 6
+          paddingX: 32
         }}
       >
         {message2}

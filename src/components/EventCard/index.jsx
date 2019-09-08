@@ -38,24 +38,24 @@ export const EventCard = ({
           src={image}
           sx={{
             width: "100%",
-            height: 12,
+            height: 256,
             objectFit: "cover",
             backgroundSize: "cover",
             backgroundPosition: "center"
           }}
         />
-        <Box sx={{ padding: 4 }}>
-          <Styled.p sx={{ marginY: 1, color: "text" }}>{title}</Styled.p>
+        <Box sx={{ padding: 16 }}>
+          <Styled.p sx={{ marginY: 2, color: "text" }}>{title}</Styled.p>
           <Styled.p
-            sx={{ marginTop: 0, marginBottom: 2, fontSize: 2, color: "text" }}
+            sx={{ marginTop: 0, marginBottom: 4, fontSize: 4, color: "text" }}
           >
             {description}
           </Styled.p>
           <Styled.p
             sx={{
-              marginTop: 4,
-              marginBottom: 2,
-              fontSize: 2,
+              marginTop: 16,
+              marginBottom: 4,
+              fontSize: 16,
               fontWeight: "bold",
               color: "#00ace6"
             }}

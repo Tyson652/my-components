@@ -37,8 +37,8 @@ const Heading = ({ children }) => (
       margin: 0,
       variant: "textStyles.heading",
       color: "mutedText",
-      fontSize: [2, 2, 3],
-      marginBottom: [3],
+      fontSize: [16, 16, 20],
+      marginBottom: [8],
       fontWeight: "body"
     }}
   >
@@ -51,7 +51,7 @@ const FooterLinkGroup = ({ children }) => (
     sx={{
       flexWrap: "wrap",
       justifyContent: "space-between",
-      paddingTop: 2
+      paddingTop: 4
     }}
   >
     {children}
@@ -59,15 +59,15 @@ const FooterLinkGroup = ({ children }) => (
 );
 
 const FooterLinkList = ({ children }) => (
-  <Box sx={{ marginRight: 7, marginBottom: 5 }}>{children}</Box>
+  <Box sx={{ marginRight: 64, marginBottom: 24 }}>{children}</Box>
 );
 
 const FooterLink = ({ href, children }) => (
   <Styled.a
     sx={{
       display: "block",
-      marginBottom: [2, 2, 3],
-      fontSize: [1, 1, 2],
+      marginBottom: [4, 4, 8],
+      fontSize: [14, 14, 16],
       textDecoration: "none",
       "&:hover": {
         color: "primary"

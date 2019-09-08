@@ -11,7 +11,6 @@ export * from "./Map";
 export * from "./NextEvent";
 export * from "./OrganisersRow";
 export * from "./PageLayout";
-export * from "./PersonGroup";
 export * from "./Quote";
 export * from "./SponsorsRow";
 export * from "./Talk";

@@ -1,3 +1,5 @@
+import { Sizes, Space, FontSizes, BorderWidths, Radii } from "./themeArrays.js";
+
 export default {
   colors: {
     text: "#3e3e3e",
@@ -23,7 +25,7 @@ export default {
     heading: "'Playfair Display', Georgia, serif",
     modern: "'Arial', Helvetica, sans-serif"
   },
-  fontSizes: [12, 14, 16, 20, 24, 36, 48, 64, 76, 84],
+  fontSizes: FontSizes(),
   fontWeights: {
     light: 100,
     body: 400,
@@ -35,43 +37,12 @@ export default {
     body: 1.5,
     heading: 1.25
   },
-  sizes: [
-    0,
-    16,
-    20,
-    24,
-    32,
-    50,
-    64,
-    82,
-    100,
-    128,
-    160,
-    200,
-    256,
-    300,
-    325,
-    350,
-    375,
-    400,
-    425,
-    450,
-    475,
-    500,
-    550,
-    600,
-    650,
-    700,
-    750,
-    800,
-    850,
-    900
-  ],
-  space: [0, 2, 4, 8, 16, 24, 32, 64, 128, 256],
+  sizes: Sizes(),
+  space: Space(),
   breakpoints: ["690px", "960px", "1100px", "1750px"],
   borderTypes: ["solid"],
-  borderWidths: [0, 1, 2, 4, 6, 8, 10],
-  radii: [0, "2px", "4px", "6px", "1em", "2em", "4em"],
+  borderWidths: BorderWidths(),
+  radii: Radii(),
   // abstraction leap
   buttonStyles: {
     primary: {
@@ -89,16 +60,16 @@ export default {
     signUp: {
       color: "background",
       backgroundColor: "brandDark",
-      paddingX: 5,
-      paddingY: 3,
+      paddingX: 24,
+      paddingY: 8,
       display: "inline-block",
-      borderRadius: 3,
-      marginX: 3,
-      marginTop: [3, 3, 4],
-      marginBottom: 5,
+      borderRadius: 6,
+      marginX: 8,
+      marginTop: [8, 8, 16],
+      marginBottom: 24,
       border: "2px solid background",
       fontFamily: "modern",
-      fontSize: [2, 2, 3],
+      fontSize: [16, 16, 20],
       fontWeight: "body",
       textDecoration: "none",
       ":hover": {
@@ -128,9 +99,9 @@ export default {
       fontWeight: "heading",
       lineHeight: "heading",
       color: "mutedText",
-      padding: 3,
-      marginBottom: [2, 2, 2],
-      fontSize: 4
+      padding: 8,
+      marginBottom: 4,
+      fontSize: 24
     },
     shadow: {
       textShadow: "2px 2px 5px rgba(0, 0, 0, 0.05)"
@@ -160,12 +131,12 @@ export default {
     button: {
       borderWidth: 1,
       borderColor: "primary",
-      paddingX: 4,
-      paddingY: [1, 2, 2],
-      marginY: [3, 2, 2],
+      paddingX: 16,
+      paddingY: [2, 4, 4],
+      marginY: [8, 4, 4],
       borderStyle: 0,
-      borderRadius: 2,
-      fontSize: 1,
+      borderRadius: 4,
+      fontSize: 14,
       fontWeight: "body"
     }
   },
@@ -213,7 +184,7 @@ export default {
       color: "text",
       bg: "background",
       lineHeight: "body",
-      fontSize: [2, 2, 3]
+      fontSize: [16, 16, 20]
     },
     // Container: {
     //   paddingX: [3, 4, 5]
@@ -225,23 +196,23 @@ export default {
     },
     h1: {
       variant: "textStyles.modern",
-      fontSize: [6, 6, 6]
+      fontSize: [48, 48, 48]
     },
     h2: {
       variant: "textStyles.modern",
-      fontSize: [5, 5, 5]
+      fontSize: [36, 36, 36]
     },
     h3: {
       variant: "textStyles.modern",
-      fontSize: [4, 4, 4]
+      fontSize: [24, 24, 24]
     },
     h4: {
       variant: "textStyles.modern",
-      fontSize: [3, 3, 3]
+      fontSize: [20, 20, 20]
     },
     h5: {
       variant: "textStyles.modern",
-      fontSize: [2, 2, 2]
+      fontSize: [16, 16, 16]
     },
     a: {
       variant: "linkStyles.Buttondefault",
@@ -251,7 +222,7 @@ export default {
       margin: "14px 16px 14px -5px",
       fontSize: "36px"
     },
-    li: { padding: 3 },
+    li: { padding: 20 },
     // p: { fontSize: 3 },
     hr: {
       borderBottom: theme =>

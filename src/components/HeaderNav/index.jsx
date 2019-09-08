@@ -25,8 +25,8 @@ export const HeaderNav = ({ togglePageFix, logo, page }) => {
       sx={{
         backgroundColor: page === "home" ? headerBg : "headerOpaque",
         transition: ".6s",
-        paddingX: [4, 4, 5],
-        paddingY: 3,
+        paddingX: [16, 16, 24],
+        paddingY: 8,
       }}
     >
       <BurgerNav
@@ -59,7 +59,7 @@ const Navbar = ({ links, title, logo, page }) => {
         sx={{
           justifyContent: "space-between",
           alignItems: "center",
-          paddingY: 3,
+          paddingY: 8,
         }}
       >
         <Styled.a href="/">
@@ -119,8 +119,8 @@ const HeaderLogo = ({ children, logo, page }) => {
           margin: 0,
           variant: "linkStyles.buttonDefault",
           color: "background",
-          padding: 2,
-          paddingX: 3,
+          padding: 4,
+          paddingX: 8,
           fontFamily: "modern",
           fontWeight: "light",
           lineHeight: "heading",
@@ -142,9 +142,9 @@ const HeaderLink = ({ children }) => (
     sx={{
       display: "inline",
       color: "background",
-      fontSize: [2, 2, 3],
-      padding: 1,
-      marginX: [4, 4, 5],
+      fontSize: [16, 16, 20],
+      padding: 2,
+      marginX: [16, 16, 24],
       letterSpacing: [0, 0, "1px"],
       fontWeight: "light",
       font: "modern",
@@ -159,7 +159,7 @@ const BurgerLink = ({ children }) => (
     sx={{
       variant: "borderStyles.veryLightBorderTop",
       width: "100%",
-      padding: 4,
+      padding: 16,
     }}
   >
     <Styled.p
@@ -167,9 +167,9 @@ const BurgerLink = ({ children }) => (
         display: "inline",
         variant: "linkStyles.buttonDefault",
         color: "brandDark",
-        marginX: 7,
-        marginY: 3,
-        padding: 2,
+        marginX: 64,
+        marginY: 8,
+        padding: 4,
         fontWeight: 2,
         "&:hover": {
           color: "background",
@@ -191,13 +191,13 @@ const IconBar = () => (
       marginY: "6px",
       backgroundColor: "background",
       opacity: 0.8,
-      borderRadius: 4,
+      borderRadius: 15,
     }}
   />
 )
 
 const BurgerIcon = ({ dropDownOnClick }) => (
-  <Box onClick={dropDownOnClick} sx={{ cursor: "pointer", marginRight: 5 }}>
+  <Box onClick={dropDownOnClick} sx={{ cursor: "pointer", marginRight: 24 }}>
     <IconBar />
     <IconBar />
     <IconBar />
@@ -224,7 +224,7 @@ const BurgerNav = ({ links, title, togglePageFix, logo, page }) => {
         sx={{
           justifyContent: "space-between",
           alignItems: "center",
-          paddingY: 3,
+          paddingY: 8,
         }}
       >
         <Styled.a href="/">
@@ -242,7 +242,7 @@ const BurgerNav = ({ links, title, togglePageFix, logo, page }) => {
           backgroundColor: "background",
           justifyContent: "center",
           variant: "textStyles.modern",
-          fontSize: 3,
+          fontSize: 20,
           zIndex: 25,
           left: 0,
         }}

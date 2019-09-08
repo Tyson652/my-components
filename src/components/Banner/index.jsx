@@ -7,8 +7,8 @@ export const Banner = ({ backgroundImageUrl }) => (
       backgroundImage: `url(${backgroundImageUrl})`,
       backgroundSize: `cover`,
       backgroundPosition: "center",
-      height: "300px",
-      margin: "0px"
+      height: 300,
+      margin: 0
     }}
   />
 );

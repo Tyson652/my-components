@@ -9,10 +9,10 @@ export const Avatar = ({ image, size }) => {
       src={image}
       // onerror={`this.src=${DefaultAvatar}`}
       sx={{
-        width: size === "large" ? [8, 8, 8] : 6,
-        height: size === "large" ? [8, 8, 8] : 6,
+        width: size === "large" ? [100, 100, 100] : 64,
+        height: size === "large" ? [100, 100, 100] : 64,
         borderRadius: "50%",
-        padding: 2,
+        padding: 4,
         maxWidth: "100%"
       }}
     />
