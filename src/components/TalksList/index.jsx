@@ -1,10 +1,10 @@
 /** @jsx jsx */
 import { jsx, Box, Styled, Flex, Container } from "theme-ui"
-
+import TalksListYaml from "./talksListYaml.yaml"
 import { Talk } from "../Talk/index"
 
-export const TalksList = ({ talks, siteYaml }) => {
-  const { title, line1, line2, email } = siteYaml.talks
+export const TalksList = ({ talks }) => {
+  const { title, line1, line2, email } = TalksListYaml.talks
   return (
     <Flex
       sx={{

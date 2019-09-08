@@ -1,12 +1,10 @@
 /** @jsx jsx */
 import { Box, Flex, jsx, Styled } from "theme-ui";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-import { IconButton } from "../buttons/index";
+import FooterYaml from "./footerYaml.yaml"
 import { SocialIcon } from "../SocialIcon";
 
-export const Footer = ({ siteYaml }) => {
-  const { copyright } = siteYaml.footer;
+export const Footer = () => {
+  const { copyright, title } = FooterYaml;
   return (
     <Flex
       sx={{
@@ -38,7 +36,7 @@ export const Footer = ({ siteYaml }) => {
             alignItems: "center"
           }}
         >
-          <FooterMessage siteYaml={siteYaml} />
+          <FooterMessage />
         </Flex>
       </Flex>
       <Flex
@@ -62,7 +60,7 @@ export const Footer = ({ siteYaml }) => {
         >
           <Flex sx={{ flexDirection: "column", textAlign: "center" }}>
             <Styled.p sx={{ fontSize: 4, marginBottom: 0 }}>
-              {siteYaml.title}
+              {title}
             </Styled.p>
             <Styled.p sx={{ fontSize: 2 }}>{copyright}</Styled.p>
           </Flex>
@@ -72,8 +70,8 @@ export const Footer = ({ siteYaml }) => {
   );
 };
 
-const FooterMessage = ({ siteYaml }) => {
-  const { message1, message2, iconType, iconKeyword1, iconLink1, iconKeyword2, iconLink2, iconKeyword3, iconLink3 } = siteYaml.footer;
+const FooterMessage = () => {
+  const { message1, message2, iconType, iconKeyword1, iconLink1, iconKeyword2, iconLink2, iconKeyword3, iconLink3 } = FooterYaml;
   return (
     <Flex
       sx={{

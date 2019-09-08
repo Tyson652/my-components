@@ -2,9 +2,10 @@
 import { useState, useEffect } from "react"
 import { jsx, Box, Flex, Styled } from "theme-ui"
 import { Logo } from "../Logo"
+import HeaderNavYaml from "./headerNavYaml.yaml"
 
-export const HeaderNav = ({ togglePageFix, siteYaml, logo, page }) => {
-  const { title, headerNav } = siteYaml
+export const HeaderNav = ({ togglePageFix, logo, page }) => {
+  const { title, links } = HeaderNavYaml
 
   const [headerBg, setHeaderBg] = useState("headerTransparent")
 
@@ -31,7 +32,7 @@ export const HeaderNav = ({ togglePageFix, siteYaml, logo, page }) => {
       <BurgerNav
         togglePageFix={togglePageFix}
         title={title}
-        links={headerNav.map(link => ({
+        links={links.map(link => ({
           description: link.description,
           href: link.href,
         }))}
@@ -42,7 +43,7 @@ export const HeaderNav = ({ togglePageFix, siteYaml, logo, page }) => {
         page={page}
         title={title}
         logo={logo}
-        links={headerNav.map(link => ({
+        links={links.map(link => ({
           description: link.description,
           href: link.href,
         }))}

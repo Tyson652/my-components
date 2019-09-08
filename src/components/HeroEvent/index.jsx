@@ -1,14 +1,13 @@
 /** @jsx jsx */
 import { Box, Flex, jsx, Styled } from "theme-ui"
 import { IconButton } from "../buttons/index"
-
+import HeroEventYaml from "./heroEventYaml.yaml"
 import { Logo } from "../Logo"
 
 export const HeroEventMeetup = ({
   heading,
   date,
   children,
-  siteYaml,
   background,
   logoUrl,
 }) => {
@@ -17,8 +16,8 @@ export const HeroEventMeetup = ({
     buttonIconPrefix,
     buttonText,
     buttonHref,
-  } = siteYaml.iconButton
-  const { subHeading1, subHeading2 } = siteYaml.heroEvent
+  } = HeroEventYaml.iconButton
+  const { subHeading1, subHeading2 } = HeroEventYaml
   return (
     <Flex
       sx={{

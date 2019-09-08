@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx, Box } from "theme-ui"
-import { Avatar, DefaultHead } from "../components"
+import { Avatar, DefaultHead, Footer } from "../components"
 import Tyson from "../images/tyson.jpeg"
 
 export default () => {
@@ -10,6 +10,7 @@ export default () => {
         <p>test</p>
         <Avatar size="large" image={Tyson} />
       </Box>
+      <Footer />
     </DefaultHead>
   )
 }

@@ -1,8 +1,9 @@
-import React, { ReactNode } from "react";
+import React from "react";
 import Helmet from "react-helmet";
+import HeadYaml from "./headYaml.yaml"
 
-export const Head = ({ frontmatter, siteYaml, children }) => {
-  const { title, defaultImage, description, siteUrl } = siteYaml;
+export const Head = ({ frontmatter, children }) => {
+  const { title, defaultImage, description, siteUrl } = HeadYaml;
   const {
     path,
     title: eventTitle,

@@ -1,30 +1,24 @@
 /** @jsx jsx */
-import { jsx, Box, Flex, Styled, Container } from "theme-ui";
+import { jsx, Box, Flex, Styled, Container } from "theme-ui"
+import OrganisersRowYaml from "./organisersRowYaml.yaml"
+import { Avatar } from "../Avatar"
 
-import { Avatar } from "../Avatar";
-
-
-
-
-export const OrganisersRow = ({
-  organisersTitle,
-  people
-}) => {
+export const OrganisersRow = ({ people }) => {
   return (
     <Container>
       <Box sx={{ width: "100%", marginTop: [5, 0, 0] }}>
         <Flex
           sx={{
             width: "100%",
-            flexDirection: "column"
+            flexDirection: "column",
           }}
         >
-          <Heading>{organisersTitle} </Heading>
+          <Heading>{OrganisersRowYaml.organisersTitle} </Heading>
           <Flex
             sx={{
               flexWrap: "wrap",
               justifyContent: "center",
-              alignItems: "center"
+              alignItems: "center",
             }}
           >
             {people.map((person, i) => (
@@ -44,10 +38,8 @@ export const OrganisersRow = ({
         </Flex>
       </Box>
     </Container>
-  );
-};
-
-
+  )
+}
 
 const PersonBox = ({ children }) => (
   <Flex
@@ -56,23 +48,23 @@ const PersonBox = ({ children }) => (
       alignItems: "center",
       width: "33.3%",
       justifyContent: ["flex-start", "center", "center"],
-      minWidth: 250
+      minWidth: 250,
     }}
   >
     {children}
   </Flex>
-);
+)
 
 const TextBox = ({ children }) => (
   <Flex
     sx={{
       paddingLeft: 4,
-      flexDirection: "column"
+      flexDirection: "column",
     }}
   >
     {children}
   </Flex>
-);
+)
 
 const Heading = ({ children }) => (
   <Styled.p
@@ -83,12 +75,12 @@ const Heading = ({ children }) => (
       paddingTop: 5,
       fontSize: 5,
       fontWeight: "body",
-      textAlign: "center"
+      textAlign: "center",
     }}
   >
     {children}
   </Styled.p>
-);
+)
 
 const Name = ({ children }) => (
   <Styled.p
@@ -96,21 +88,21 @@ const Name = ({ children }) => (
       margin: 0,
       variant: "textStyles.modern",
       color: "mutedText",
-      fontSize: [3, 3, 3]
+      fontSize: [3, 3, 3],
     }}
   >
     {children}
   </Styled.p>
-);
+)
 
 const Description = ({ children }) => (
   <Styled.p
     sx={{
       margin: 0,
       fontFamily: "modern",
-      fontSize: [1, 2, 2]
+      fontSize: [1, 2, 2],
     }}
   >
     {children}
   </Styled.p>
-);
+)

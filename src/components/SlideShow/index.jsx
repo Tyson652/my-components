@@ -2,20 +2,18 @@
 import { useState } from "react"
 import { jsx, Box, Flex } from "theme-ui"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import SlideShowYaml from "./slideShowYaml.yaml"
 
-export const SlideShow = ({ imageUrls, siteYaml }) => {
+export const SlideShow = ({ imageUrls }) => {
   const [index, setIndex] = useState(0)
   let images = undefined
   if (imageUrls === null) {
-    images = [siteYaml.defaultImage]
+    images = [SlideShowYaml.defaultImage]
   } else {
     images = imageUrls.map(
-      image => siteYaml.siteUrl + image.childImageSharp.fluid.src
+      image => SlideShowYaml.siteUrl + image.childImageSharp.fluid.src
     )
   }
-
-  // const images = imageLinks.map((image:any) => siteUrl + image.childImageSharp.fluid.src)
-  /* images = imageUrls.map((image:any) => siteYaml.siteUrl + image.childImageSharp.fluid.src) */
 
   const handleNext = () => {
     index === images.length - 1 ? setIndex(0) : setIndex(index + 1)

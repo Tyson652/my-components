@@ -1,9 +1,9 @@
 /** @jsx jsx */
 import { jsx, Container, Flex, Styled } from "theme-ui";
 import { MDXRenderer } from "gatsby-plugin-mdx";
+import NextEventYaml from "nextEventYaml.yaml"
 
 export const NextEvent = ({
-  siteYaml,
   eventImgUrl,
   title,
   body
@@ -39,7 +39,7 @@ export const NextEvent = ({
               fontWeight: "normal"
             }}
           >
-            {siteYaml.nextEventLine}
+            {NextEventYaml.nextEventLine}
           </Styled.h4>
           <Styled.h3
             sx={{
@@ -52,7 +52,6 @@ export const NextEvent = ({
           <Flex
             sx={{
               flexDirection: "column"
-              // width: ["100%", "68%", "68%"]
             }}
           >
             <MDXRenderer components={null} scope={null}>

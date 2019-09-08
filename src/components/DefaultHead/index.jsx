@@ -3,6 +3,7 @@ import Helmet from "react-helmet";
 import defaultYaml from "./defaultHead.yaml"
 
 export const DefaultHead = ({ children }) => {
+  console.log(defaultYaml)
   const { title, defaultImage, description, siteUrl } = defaultYaml;
   const { name, streetAddress, city, latitude, longitude } = defaultYaml.location
 

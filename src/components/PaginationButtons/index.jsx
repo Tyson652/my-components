@@ -2,8 +2,9 @@
 import { Flex, jsx, Styled, Box } from "theme-ui"
 import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import PaginationButtonsYaml from "./paginationButtonsYaml.yaml"
 
-export const PaginationButtons = ({ pageContext, siteYaml }) => {
+export const PaginationButtons = ({ pageContext }) => {
   const { previous, next } = pageContext
   const displayPrevious = previous === null ? "none" : "inline-block"
   const previousPath = previous === null ? "none" : previous.frontmatter.path
@@ -33,7 +34,7 @@ export const PaginationButtons = ({ pageContext, siteYaml }) => {
               icon={["fas", "chevron-left"]}
               css={{ color: "#ff9900", fontSize: 40 }}
             />
-            {siteYaml.paginationButtons.previous}
+            {PaginationButtonsYaml.previous}
           </Styled.p>
         </Box>
       </Link>
@@ -54,7 +55,7 @@ export const PaginationButtons = ({ pageContext, siteYaml }) => {
             display: "flex",
           }}
         >
-          {siteYaml.paginationButtons.next}
+          {PaginationButtonsYaml.next}
           <FontAwesomeIcon
             icon={["fas", "chevron-right"]}
             css={{ color: "#ff9900", fontSize: 40 }}

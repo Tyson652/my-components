@@ -1,8 +1,10 @@
 /** @jsx jsx */
 import { Box, Flex, jsx, Styled } from "theme-ui"
 import { Container } from "theme-ui"
+import PageInformationYaml from "./pageInformationYaml.yaml"
 
-export const PageInformation = ({ heading1, paragraph1 }) => {
+export const PageInformation = () => {
+  const { heading1, paragraph1 } = PageInformationYaml
   return (
     <Container sx={{ display: "flex", justifyContent: "center" }}>
       <Box sx={{ width: "100%", marginTop: [5, 0, 0] }}>

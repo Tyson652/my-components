@@ -1,7 +1,8 @@
 /** @jsx jsx */
 import { jsx, Box, Styled, Flex, Container } from "theme-ui"
+import SponsorsRowYaml from "./sponsorsRowYaml"
 
-export const SponsorsGroup = ({ sponsorsTitle, sponsors }) => {
+export const SponsorsGroup = ({ sponsors }) => {
   return (
     <Container>
       <Flex
@@ -13,7 +14,7 @@ export const SponsorsGroup = ({ sponsorsTitle, sponsors }) => {
           marginTop: 6,
         }}
       >
-        <Heading>{sponsorsTitle}</Heading>
+        <Heading>{SponsorsRowYaml.sponsorsTitle}</Heading>
         <Flex
           sx={{
             justifyContent: "center",

@@ -9,7 +9,7 @@ import { HeaderNav } from "../HeaderNav"
 
 library.add(faCheckSquare, faCoffee)
 
-export const PageLayout = ({ children, siteYaml, page, logo }) => {
+export const PageLayout = ({ children, page, logo }) => {
   const [position, setPosition] = useState("null")
 
   const togglePageFix = () => {
@@ -29,8 +29,6 @@ export const PageLayout = ({ children, siteYaml, page, logo }) => {
         />
         <Container
           sx={{
-            /*paddingX: [0, 4, 5],*/
-
             position: "fixed",
             maxWidth: "100%",
             padding: "0px",
@@ -41,12 +39,11 @@ export const PageLayout = ({ children, siteYaml, page, logo }) => {
             page={page}
             logo={logo}
             togglePageFix={togglePageFix}
-            siteYaml={siteYaml}
           />
         </Container>
         {children}
         <Box sx={{ flexGrow: 1 }} />
-        <Footer siteYaml={siteYaml} />
+        <Footer />
       </Layout>
     </Styled.root>
   )

@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import { Box, Flex, jsx, Styled } from "theme-ui";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import EventCardYaml from "./EventCardYaml.yaml"
 
 export const EventCard = ({
   title,
@@ -8,11 +9,10 @@ export const EventCard = ({
   date,
   body,
   image,
-  description,
-  siteYaml
+  description
 }) => {
   if (image === "null") {
-    image = siteYaml.defaultImage;
+    image = EventCardYaml.defaultImage;
   }
   return (
     <Styled.a
