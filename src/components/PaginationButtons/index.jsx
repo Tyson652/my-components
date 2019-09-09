@@ -25,7 +25,7 @@ export const PaginationButtons = ({ pageContext }) => {
         <Box sx={{ display: displayPrevious }}>
           <Styled.p
             sx={{
-              fontSize: 4,
+              fontSize: 24,
               alignItems: "center",
               display: "flex",
             }}
@@ -50,7 +50,7 @@ export const PaginationButtons = ({ pageContext }) => {
       >
         <Styled.p
           sx={{
-            fontSize: 4,
+            fontSize: 24,
             alignItems: "center",
             display: "flex",
           }}

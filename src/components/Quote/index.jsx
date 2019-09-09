@@ -8,20 +8,20 @@ export const Quote = ({ title, name, company, quote }) => (
     as="blockquote"
     sx={{
       bg: "muted",
-      padding: [5, 6, 7],
+      padding: [24, 32, 64],
       fontFamily: "heading",
-      fontSize: [2, 2, 3],
+      fontSize: [16, 16, 20],
       margin: 0
     }}
   >
     <Flex
       sx={{
-        "& > * + *": { marginLeft: [4, 5, 6] }
+        "& > * + *": { marginLeft: [16, 24, 32] }
       }}
     >
       <QuoteMark />
       <Box>
-        <Styled.p sx={{ marginTop: 4, marginBottom: 3 }}>{quote}</Styled.p>
+        <Styled.p sx={{ marginTop: 16, marginBottom: 8 }}>{quote}</Styled.p>
         <Styled.p
           sx={{
             margin: 0,
@@ -46,7 +46,7 @@ const QuoteMark = () => (
     xmlnsXlink="http://www.w3.org/1999/xlink"
     viewBox="0 0 349.078 349.078"
     fill="rgba(0,0,0,0.2)"
-    sx={{ width: [4, 4, 4], height: [4, 4, 4] }}
+    sx={{ width: [32, 32, 32], height: [32, 32, 32] }}
   >
     <g>
       <path

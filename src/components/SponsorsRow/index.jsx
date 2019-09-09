@@ -11,7 +11,7 @@ export const SponsorsGroup = ({ sponsors }) => {
           justifyContent: "center",
           textAlign: "center",
           flexDirection: "column",
-          marginTop: 6,
+          marginTop: 32,
         }}
       >
         <Heading>{SponsorsRowYaml.sponsorsTitle}</Heading>
@@ -30,8 +30,8 @@ export const SponsorsGroup = ({ sponsors }) => {
                   src={sponsor.logoUrl}
                   alt={`${sponsor.name}`}
                   sx={{
-                    width: [12, 12, 12],
-                    margin: 2,
+                    width: 256,
+                    margin: 4,
                   }}
                 />
               </Styled.a>
@@ -47,9 +47,9 @@ const Heading = ({ children }) => (
   <Styled.p
     sx={{
       margin: 0,
-      marginBottom: [5, 3, 3],
+      marginBottom: [24, 8, 8],
       variant: "textStyles.body",
-      fontSize: 5,
+      fontSize: 36,
       fontWeight: "body",
     }}
   >

@@ -7,7 +7,7 @@ export const PageInformation = () => {
   const { heading1, paragraph1 } = PageInformationYaml
   return (
     <Container sx={{ display: "flex", justifyContent: "center" }}>
-      <Box sx={{ width: "100%", marginTop: [5, 0, 0] }}>
+      <Box sx={{ width: "100%", marginTop: [24, 0, 0] }}>
         <Heading>{heading1}</Heading>
         <Flex
           sx={{
@@ -25,7 +25,7 @@ export const PageInformation = () => {
 const Paragraph = ({ children }) => (
   <Flex
     sx={{
-      paddingLeft: 4,
+      paddingLeft: 16,
       textAlign: "center",
       flexDirection: "column",
       fontFamily: "body",
@@ -42,7 +42,7 @@ const Heading = ({ children }) => (
     sx={{
       margin: 0,
       textAlign: "center",
-      fontSize: [5, 4, 5],
+      fontSize: [36, 24, 36],
       variant: "textStyles.heading",
       marginY: 50,
       fontFamily: "body",

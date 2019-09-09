@@ -13,7 +13,7 @@ export const TalksList = ({ talks }) => {
       }}
     >
       <Container sx={{ justifyContent: "center" }}>
-        <Box sx={{ marginTop: 5 }}>
+        <Box sx={{ marginTop: 24 }}>
           <Heading>{title}</Heading>
           <Box>
             {talks &&
@@ -47,7 +47,7 @@ const Heading = ({ children }) => (
       margin: 0,
       variant: "textStyles.body",
       textAlign: "center",
-      fontSize: 5,
+      fontSize: 36,
       fontWeight: "body",
     }}
   >
@@ -60,10 +60,10 @@ const EmailActionBox = ({ children }) => (
     sx={{
       flexDirection: "column",
       alignItems: "center",
-      paddingX: 4,
-      paddingY: 7,
+      paddingX: 16,
+      paddingY: 64,
       textAlign: "center",
-      marginTop: 4,
+      marginTop: 16,
     }}
   >
     {children}
@@ -76,7 +76,7 @@ const Title = ({ children }) => (
       margin: 0,
       variant: "textStyles.modern",
       color: "mutedText",
-      fontSize: 4,
+      fontSize: 24,
       fontWeight: "bold",
     }}
   >
@@ -90,7 +90,7 @@ const SecondaryTitle = ({ children }) => (
       margin: 0,
       fontFamily: "modern",
       color: "mutedText",
-      fontSize: 2,
+      fontSize: 16,
     }}
   >
     {children}

@@ -11,15 +11,15 @@ export const MapDescription = ({
 }) => (
   <Flex
     sx={{
-      paddingX: [3, 6, 7],
-      paddingY: [5, 5, 7],
+      paddingX: [8, 32, 64],
+      paddingY: [24, 24, 64],
       justifyContent: "center"
     }}
   >
     <Container sx={{ justifyContent: "center" }}>
       <Styled.h2
         sx={{
-          margin: [5, 5, "0 0 -50px 0"],
+          margin: [24, 24, "0 0 -50px 0"],
           fontWeight: 100,
           textAlign: ["center", "center", "left"]
         }}
@@ -38,7 +38,7 @@ export const MapDescription = ({
         <Flex sx={{ alignItems: "center", width: "90%" }}>
           <Flex
             sx={{
-              marginTop: [6, 6, 0],
+              marginTop: [32, 32, 0],
               flexDirection: ["column", "column", "row"],
               textAlign: ["center", "center", "left"],
               alignItems: ["center", "center", "flex-start"]
@@ -48,17 +48,17 @@ export const MapDescription = ({
             <Flex
               sx={{
                 flexDirection: "column",
-                marginX: [2, 3, 3],
+                marginX: [4, 8, 8],
                 width: ["100%", "100%", "80%"]
               }}
             >
-              <Styled.h3 sx={{ margin: 0, fontSize: 4 }}>{name}</Styled.h3>
+              <Styled.h3 sx={{ margin: 0, fontSize: 24 }}>{name}</Styled.h3>
               <Styled.h3
-                sx={{ fontWeight: "body", marginY: 2, fontSize: [3, 3, 4] }}
+                sx={{ fontWeight: "body", marginY: 4, fontSize: [20, 20, 24] }}
               >
                 {address}
               </Styled.h3>
-              <Styled.p sx={{ fontSize: [2, 2, 3], lineHeight: "heading" }}>
+              <Styled.p sx={{ fontSize: [16, 16, 20], lineHeight: "heading" }}>
                 {instructions}
               </Styled.p>
             </Flex>
@@ -75,7 +75,7 @@ const Marker = () => (
     as="svg"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 512 512"
-    sx={{ height: [4, 4, 5], width: [4, 4, 5] }}
+    sx={{ height: [32, 32, 50], width: [32, 32, 50] }}
     fill={"#3e3e3e"}
   >
     <path

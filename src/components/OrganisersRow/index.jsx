@@ -6,7 +6,7 @@ import { Avatar } from "../Avatar"
 export const OrganisersRow = ({ people }) => {
   return (
     <Container>
-      <Box sx={{ width: "100%", marginTop: [5, 0, 0] }}>
+      <Box sx={{ width: "100%", marginTop: [24, 0, 0] }}>
         <Flex
           sx={{
             width: "100%",
@@ -44,7 +44,7 @@ export const OrganisersRow = ({ people }) => {
 const PersonBox = ({ children }) => (
   <Flex
     sx={{
-      padding: 3,
+      padding: 8,
       alignItems: "center",
       width: "33.3%",
       justifyContent: ["flex-start", "center", "center"],
@@ -58,7 +58,7 @@ const PersonBox = ({ children }) => (
 const TextBox = ({ children }) => (
   <Flex
     sx={{
-      paddingLeft: 4,
+      paddingLeft: 16,
       flexDirection: "column",
     }}
   >
@@ -71,9 +71,9 @@ const Heading = ({ children }) => (
     sx={{
       variant: "textStyles.title",
       margin: 0,
-      paddingBottom: 6,
-      paddingTop: 5,
-      fontSize: 5,
+      paddingBottom: 32,
+      paddingTop: 24,
+      fontSize: 24,
       fontWeight: "body",
       textAlign: "center",
     }}
@@ -88,7 +88,7 @@ const Name = ({ children }) => (
       margin: 0,
       variant: "textStyles.modern",
       color: "mutedText",
-      fontSize: [3, 3, 3],
+      fontSize: 20,
     }}
   >
     {children}
@@ -100,7 +100,7 @@ const Description = ({ children }) => (
     sx={{
       margin: 0,
       fontFamily: "modern",
-      fontSize: [1, 2, 2],
+      fontSize: [14, 16, 16],
     }}
   >
     {children}

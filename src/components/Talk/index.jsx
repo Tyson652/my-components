@@ -22,7 +22,7 @@ export const Talk = ({
       <TextBox>
         <Speaker>{speaker.name}</Speaker>
         <Title>{title}</Title>
-        <Styled.p sx={{ fontSize: 2, paddingTop: 2, margin: 0 }}>
+        <Styled.p sx={{ fontSize: 16, paddingTop: 4, margin: 0 }}>
           {description}
         </Styled.p>
         <Flex>
@@ -41,7 +41,7 @@ const TalkBox = ({ children }) => (
   <Flex
     sx={{
       flexDirection: ["column", "row", "row"],
-      padding: 4
+      padding: 16
     }}
   >
     {children}
@@ -51,13 +51,13 @@ const TalkBox = ({ children }) => (
 const BorderLine = () => (
   <Box
     sx={{
-      width: 8,
+      width: 100,
       borderTop: [
         theme => `2px solid ${theme.colors.mutedText}`,
         "none",
         "none"
       ],
-      marginTop: 5
+      marginTop: 24
     }}
   />
 );
@@ -67,7 +67,7 @@ const Speaker = ({ children }) => (
     sx={{
       margin: 0,
       color: "mutedText",
-      fontSize: 4,
+      fontSize: 24,
       lineHeight: "tight"
     }}
   >
@@ -81,7 +81,7 @@ const Title = ({ children }) => (
       margin: 0,
       color: "mutedText",
       fontFamily: "modern",
-      fontSize: 2,
+      fontSize: 16,
       fontWeight: "light"
     }}
   >
@@ -94,9 +94,9 @@ const TextBox = ({ children }) => (
     sx={{
       flexDirection: "column",
       justifyContent: "center",
-      paddingLeft: [0, 5, 5],
-      marginLeft: [0, 5, 5],
-      paddingTop: [3, 0, 0],
+      paddingLeft: [0, 24, 24],
+      marginLeft: [0, 24, 24],
+      paddingTop: [8, 0, 0],
       borderLeft: [
         "none",
         theme => `2px solid ${theme.colors.mutedText}`,

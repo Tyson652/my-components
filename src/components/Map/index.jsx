@@ -5,13 +5,13 @@ export const Map = ({ srcUrl, address }) => (
   <Flex
     sx={{
       variant: "boxShadowStyles.lightShadow",
-      minWidth: [13, 13, 13],
-      maxWidth: [13, 13, 13],
+      minWidth: [300, 300, 300],
+      maxWidth: [300, 300, 300],
       display: "flex",
       alignItems: "center",
       justifyContent: "center",
       flexDirection: "column",
-      borderRadius: 3,
+      borderRadius: 6,
       overflow: "hidden",
       backgroundColor: "background",
     }}
@@ -23,18 +23,18 @@ export const Map = ({ srcUrl, address }) => (
       frameBorder="0"
       allowFullScreen={true}
       sx={{
-        height: [13, 13, 13],
-        width: [13, 13, 13],
+        height: [300, 300, 300],
+        width: [300, 300, 300],
       }}
     />
     <Styled.p
       sx={{
         margin: 0,
-        fontSize: 1,
+        fontSize: 14,
         fontWeight: "heading",
         textAlign: "center",
         color: "mutedText",
-        paddingY: 4,
+        paddingY: 16,
         fontFamily: "modern",
       }}
     >

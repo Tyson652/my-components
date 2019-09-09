@@ -89,10 +89,10 @@ const Heading = ({ children }) => (
     sx={{
       margin: "auto",
       textAlign: "center",
-      fontSize: [6, 9, 9],
+      fontSize: [48, 84, 84],
       color: "background",
       variant: "textStyles.heading",
-      marginY: 3,
+      marginY: 8,
       fontWeight: "body",
     }}
   >
@@ -104,8 +104,8 @@ const SubHeadingBox = ({ children }) => (
   <Flex
     sx={{
       flexDirection: ["row", "row", "row"],
-      paddingX: 3,
-      paddingY: [1, 1, 1],
+      paddingX: 8,
+      paddingY: 2,
     }}
   >
     {children}
@@ -116,13 +116,13 @@ const SubHeading = ({ children, position, weight }) => (
   <Styled.h2
     sx={{
       color: "background",
-      fontSize: [4, 5, 5],
+      fontSize: [24, 36, 36],
       marginLeft: position === "right" ? "auto" : "0",
       marginRight: position === "left" ? "auto" : "0",
       marginY: position === ("right" || "left") ? "0" : "auto",
       font: "heading",
       fontWeight: weight,
-      paddingX: 3,
+      paddingX: 8,
     }}
   >
     {children}

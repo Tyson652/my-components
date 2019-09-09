@@ -27,8 +27,8 @@ export const SlideShow = ({ imageUrls }) => {
   return (
     <Flex
       sx={{
-        paddingX: [4, 4, 10],
-        paddingY: 3,
+        paddingX: [16, 16, 10],
+        paddingY: 8,
         alignItems: "center",
         justifyContent: "center",
       }}

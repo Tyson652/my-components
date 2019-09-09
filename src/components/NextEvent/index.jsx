@@ -13,7 +13,7 @@ export const NextEvent = ({
       <Flex
         sx={{
           flexDirection: ["column", "column", "row"],
-          margin: 5
+          margin: 24
         }}
       >
         <Styled.div
@@ -35,7 +35,7 @@ export const NextEvent = ({
         >
           <Styled.h4
             sx={{
-              margin: 1,
+              margin: 2,
               fontWeight: "normal"
             }}
           >
@@ -43,7 +43,7 @@ export const NextEvent = ({
           </Styled.h4>
           <Styled.h3
             sx={{
-              margin: 1,
+              margin: 2,
               font: "body"
             }}
           >
